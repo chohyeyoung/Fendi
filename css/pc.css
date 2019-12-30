@@ -1,0 +1,108 @@
+/* pc.css */
+.container {
+  /* outline: 1px solid red; */
+  max-width: 1200px; /* 가변 최대 1200px */
+  margin: 0 auto;
+}
+
+#main_header > .container{
+  position: relative;
+}
+#main_header > .container > h1 {
+  position: relative;
+  left: 20px; top: 20px;
+}
+#main_header > .container #main_gnb {
+  position: absolute;
+  right: 220px; top: 30px;
+}
+#main_header > .container #main_gnb li {
+  display: inline-block;
+  margin-left: 1em; margin-right: 1em;
+}
+#main_header > .container #util {
+  position: absolute;
+  right: 0; top: 30px;
+}
+#main_header > .container #util li {
+  display: inline-block;
+  margin-left: 1em; margin-right: 1em;
+}
+#main_gnb, #util { font-size: 15px;}
+
+/* gnb hover */
+#main_gnb a:hover, #util a:hover {
+  color: rgba(255,255,255, 0.7);
+} 
+
+/* 토글 메뉴, 장바구니 아이콘 비표시 */
+#toggle, #util i.fa-shopping-bag { display: none;}
+
+
+/* 세일 영역 */
+
+#hot_sale .product_list {
+  overflow: hidden;
+ /* outline: 1px solid red; */
+}
+#hot_sale .product_list > li {
+  /* width: 386.66px; */
+  width: 32.33%;
+  float: left;
+  /* margin-right: 20px; */
+  margin-right: 1.5%; 
+  
+}
+#hot_sale .product_list ul li a{
+  overflow: hidden;
+}
+
+
+#hot_sale .product_list > li img {
+  width: 100%;
+  
+}
+
+#hot_sale .product_list li img {
+  transition: 0.5s;
+  overflow: hidden;
+}
+#hot_sale .product_list li:hover img{
+  transform: scale(0.8 , 0.8);
+}
+
+#hot_sale .product_list > li:last-child {
+  margin-right: 0;
+}
+#hot_sale .product_list > li {
+  display: block;
+}
+#hot_sale .product_list .title {
+  display: block;
+}
+#hot_sale .product_list .price {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: red;
+  margin-right: 1em;
+}
+
+
+
+
+
+/* news 섹션 */
+#news {}
+#news .container {
+  overflow: hidden;
+ /* outline: 1px solid red; */
+}
+#news article {
+  width: 49.25%;
+  float: left;
+  margin-right: 1.5%;
+  /* outline: 1px solid green; */
+}
+#news article:last-child {
+  margin-right: 0;
+}
