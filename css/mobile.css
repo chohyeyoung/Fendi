@@ -101,10 +101,10 @@
     padding-right: 1em;
    }
    #news article {
-    width: 49.25%;
+    width: 100%;
     /*float: left;*/
     margin: 1.5%;
-    outline: 1px solid green;
+    /* outline: 1px solid green; */
   }
 
 /* 푸터 */
